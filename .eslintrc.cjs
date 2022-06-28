@@ -5,17 +5,11 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:node/recommended'
+		'plugin:@typescript-eslint/eslint-recommended'
 		// 'prettier'
 	],
 	env: {
 		node: true,
 		es6: true
-	},
-	rules: {
-		'node/no-unsupported-features/es-syntax': [
-			'error',
-			{ ignores: ['modules'] }
-		]
 	}
 };
